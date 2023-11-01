@@ -18,20 +18,11 @@ const BasePage: React.FC<BasePageProps> = ({ children }: BasePageProps) => {
             <Box
                 sx={{
                     bgcolor: colors.neutral[12],
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "flex-start",
-                    width: "100%",
-                    position: "relative",
                 }}
             >
-                <div style={{ top: 0, position: "sticky", zIndex: 99 }}>
-                    <Navbar />
-                </div>
-
+                <Navbar />
                 <Box
                     sx={{
-                        pb: 8,
                         overflowY: "auto",
                         overflowX: "none",
                         position: "relative",
@@ -39,7 +30,7 @@ const BasePage: React.FC<BasePageProps> = ({ children }: BasePageProps) => {
                         flexDirection: "column",
                         // Manter footer na parte de baixo da página
                         justifyContent: "space-between",
-                        height: "100vh",
+                        height: "100dvh",
                     }}
                 >
                     <Container>{children}</Container>

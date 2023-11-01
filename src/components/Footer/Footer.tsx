@@ -85,6 +85,36 @@ const Footer: React.FC = () => {
             alignItems={"center"}
             gap={4}
         >
+            <Stack
+                id="plantado-and-social-media"
+                direction={"row"}
+                width={"100%"}
+                justifyContent={"space-between"}
+            >
+                <Stack>
+                    <NavLink to={"/"}>
+                        <PlantadoLogo
+                            colorText={colors.neutral[12]}
+                            style={{ width: 128 }}
+                        />
+                    </NavLink>
+                </Stack>
+
+                <Stack direction={"row"} id="social-media-list">
+                    <IconButton>
+                        <Instagram />
+                    </IconButton>
+                    <IconButton>
+                        <Facebook />
+                    </IconButton>
+                    <IconButton>
+                        <Twitter />
+                    </IconButton>
+                    <IconButton>
+                        <YouTube />
+                    </IconButton>
+                </Stack>
+            </Stack>
             <Stack direction={"row"} gap={8}>
                 <Stack direction={"row"} width={"100%"} gap={4}>
                     {hierarchy.map((categoria) => (
@@ -102,7 +132,7 @@ const Footer: React.FC = () => {
                         </Stack>
                     ))}
                 </Stack>
-                <Stack id="ecology-text" spacing={2}>
+                <Stack id="ecology-text" spacing={2} width={"60%"}>
                     <Typography variant="h4">
                         A Plantado está comprometida com medidas para combate ao
                         desmatamento
@@ -146,37 +176,6 @@ const Footer: React.FC = () => {
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                </Stack>
-            </Stack>
-
-            <Stack
-                id="plantado-and-social-media"
-                direction={"row"}
-                width={"100%"}
-                justifyContent={"space-between"}
-            >
-                <Stack>
-                    <NavLink to={"/"}>
-                        <PlantadoLogo
-                            colorText={colors.neutral[12]}
-                            style={{ width: 128 }}
-                        />
-                    </NavLink>
-                </Stack>
-
-                <Stack direction={"row"} id="social-media-list">
-                    <IconButton>
-                        <Instagram />
-                    </IconButton>
-                    <IconButton>
-                        <Facebook />
-                    </IconButton>
-                    <IconButton>
-                        <Twitter />
-                    </IconButton>
-                    <IconButton>
-                        <YouTube />
-                    </IconButton>
                 </Stack>
             </Stack>
         </Stack>

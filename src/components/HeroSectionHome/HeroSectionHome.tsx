@@ -13,7 +13,7 @@ const HeroSectionHome: React.FC = () => {
 
     return (
         <Stack
-            my={{ xs: 2, md: 4 }}
+            mt={2}
             borderRadius={2}
             justifyContent={"center"}
             alignItems={"center"}
@@ -39,12 +39,7 @@ const HeroSectionHome: React.FC = () => {
                 </Typography>
             </Stack>
             <Divider sx={{ width: "100%" }} />
-            <Stack
-                justifyContent={"center"}
-                alignContent={"center"}
-                height={"100%"}
-                p={4}
-            >
+            <Stack justifyContent={"center"} alignContent={"center"} py={4}>
                 <Button variant="contained">{CTA}</Button>
             </Stack>
         </Stack>
