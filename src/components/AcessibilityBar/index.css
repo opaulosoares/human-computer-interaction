@@ -1,0 +1,9 @@
+.borderless-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 16px;
+}

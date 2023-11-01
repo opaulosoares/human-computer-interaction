@@ -13,6 +13,7 @@ const HeroSectionHome: React.FC = () => {
 
     return (
         <Stack
+            id="menu"
             mt={2}
             borderRadius={2}
             justifyContent={"center"}

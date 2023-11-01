@@ -38,6 +38,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
         >
             <Search />
             <InputBase
+                id="searchbar"
                 placeholder={placeholder}
                 onChange={onChange}
                 value={value}

@@ -7,16 +7,17 @@ import SalesSection from "../../components/SalesSection/SalesSection";
 import BasePage from "../../templates/BasePage/BasePage";
 
 const Homepage: React.FC = () => {
-    return (
-        <BasePage>
-            <Stack>
-                <HeroSectionHome />
-                <RecommendationBanner />
-                <CategorySection />
-                <SalesSection />
-            </Stack>
-        </BasePage>
-    );
+    
+  return (
+    <BasePage>
+      <Stack>
+        <HeroSectionHome />
+        <RecommendationBanner />
+        <CategorySection />
+        <SalesSection />
+      </Stack>
+    </BasePage>
+  );
 };
 
 export default Homepage;
