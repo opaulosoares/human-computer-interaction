@@ -1,9 +1,10 @@
+import { Stack } from "@mui/material";
 import React from "react";
-import BasePage from "../../templates/BasePage/BasePage";
-import { Stack, Typography } from "@mui/material";
-import HeroSectionHome from "../../components/HeroSectionHome/HeroSectionHome";
 import CategorySection from "../../components/CategorySection/CategorySection";
+import HeroSectionHome from "../../components/HeroSectionHome/HeroSectionHome";
 import RecommendationBanner from "../../components/RecommendationBanner/RecommendationBanner";
+import SalesSection from "../../components/SalesSection/SalesSection";
+import BasePage from "../../templates/BasePage/BasePage";
 
 const Homepage: React.FC = () => {
     return (
@@ -12,6 +13,7 @@ const Homepage: React.FC = () => {
                 <HeroSectionHome />
                 <RecommendationBanner />
                 <CategorySection />
+                <SalesSection />
             </Stack>
         </BasePage>
     );
