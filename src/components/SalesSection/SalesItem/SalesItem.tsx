@@ -1,21 +1,20 @@
 import { useTheme } from "@emotion/react";
-import { Image } from "@mui/icons-material";
-import { Button, Card, CardMedia, Stack, Typography } from "@mui/material";
+import { Button, Card, CardMedia, Typography } from "@mui/material";
+import { Product } from "../../../models/product";
 import { tokens } from "../../../theme";
+import useCart from "../../../resources/cart/use-cart";
 
 interface Props {
-  data: {
-    nome: string;
-    categoria: string;
-    preco: number;
-    imagem: string;
-  };
+  data: Product;
 }
 
 const SalesItem: React.FC<Props> = (props) => {
-  const { nome, imagem, preco, categoria } = props.data;
+  const { nome, imagem } = props.data;
   const theme = useTheme();
+  const { cart, addToCard } = useCart();
   const colors = tokens(theme.palette.mode);
+
+  console.log(cart)
 
   return (
     <Card
@@ -25,6 +24,7 @@ const SalesItem: React.FC<Props> = (props) => {
         bgcolor: "#fff",
         padding: "16px",
       }}
+      onClick={() => addToCard(props.data)}
     >
       <CardMedia
         sx={{ height: 180 }}
@@ -36,7 +36,7 @@ const SalesItem: React.FC<Props> = (props) => {
       <Button
         sx={{
           background: "#0d1912",
-          width: "100%"
+          width: "100%",
         }}
       >
         Saiba mais

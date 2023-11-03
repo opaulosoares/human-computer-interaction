@@ -1,5 +1,5 @@
 import { useTheme } from "@emotion/react";
-import { Grid, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { tokens } from "../../theme";
 import SalesItem from "./SalesItem/SalesItem";
 
